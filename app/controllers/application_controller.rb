@@ -1,6 +1,4 @@
 class ApplicationController < ActionController::Base
-  def actor_method
-    render 'actor.json.jbuilder'
-  end
+protect_from_forgery with: :null_session
 
 end
